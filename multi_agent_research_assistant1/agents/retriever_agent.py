@@ -6,11 +6,13 @@ from llm_client import call_llm
 def load_knowledge_base() -> list:
     """
     读取本地知识库文件。
+    使用项目根目录定位，避免线上部署时工作目录不同导致找不到文件。
     """
-    kb_path = Path("data") / "knowledge_base.json"
+    project_root = Path(__file__).resolve().parents[1]
+    kb_path = project_root / "data" / "knowledge_base.json"
 
     if not kb_path.exists():
-        raise FileNotFoundError("未找到 data/knowledge_base.json，请先创建本地知识库文件。")
+        raise FileNotFoundError(f"未找到知识库文件：{kb_path}")
 
     with open(kb_path, "r", encoding="utf-8") as f:
         return json.load(f)
