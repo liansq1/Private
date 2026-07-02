@@ -1,0 +1,62 @@
+[
+  {
+    "id": "kb_001",
+    "title": "AI Agent 基本概念",
+    "keywords": ["AI Agent", "智能体", "大语言模型", "任务规划", "工具调用"],
+    "content": "AI Agent 是一种能够基于用户目标进行任务理解、计划生成、工具调用、过程执行和结果反馈的智能系统。与传统问答系统相比，AI Agent 更强调任务执行能力和多步骤问题解决能力。"
+  },
+  {
+    "id": "kb_002",
+    "title": "多智能体系统",
+    "keywords": ["多智能体", "Multi-Agent", "多智能体架构", "协作", "分工"],
+    "content": "多智能体系统通过多个具有不同职责的 Agent 协作完成复杂任务。每个 Agent 可以承担不同角色，例如任务规划、资料检索、内容生成、结果检查等。多智能体架构的优势在于任务分工清晰、流程可解释、结果便于检查。"
+  },
+  {
+    "id": "kb_003",
+    "title": "Planner Agent",
+    "keywords": ["Planner", "任务规划", "任务拆解", "计划生成"],
+    "content": "Planner Agent 主要负责理解用户输入，将复杂任务拆解为多个可执行子任务，并为后续 Agent 提供执行计划。它可以提高复杂任务处理过程中的结构性和完整性。"
+  },
+  {
+    "id": "kb_004",
+    "title": "Retriever Agent",
+    "keywords": ["Retriever", "检索", "资料整理", "知识库", "RAG"],
+    "content": "Retriever Agent 负责根据任务需求从本地知识库、文献资料或外部搜索结果中提取相关信息。其作用是为内容生成提供事实依据，减少大模型直接生成时可能出现的幻觉问题。"
+  },
+  {
+    "id": "kb_005",
+    "title": "Writer Agent",
+    "keywords": ["Writer", "内容生成", "报告生成", "综述生成"],
+    "content": "Writer Agent 负责根据 Planner Agent 的任务计划和 Retriever Agent 提供的资料生成结构化内容，例如研究背景、技术路线、系统架构、实验方案和项目总结等。"
+  },
+  {
+    "id": "kb_006",
+    "title": "Critic Agent",
+    "keywords": ["Critic", "质量检查", "反思", "评审", "自我修正"],
+    "content": "Critic Agent 负责对 Writer Agent 生成的内容进行质量检查，检查维度包括任务覆盖性、结构完整性、逻辑一致性、事实可靠性、表达规范性和项目可执行性。"
+  },
+  {
+    "id": "kb_007",
+    "title": "RAG 检索增强生成",
+    "keywords": ["RAG", "检索增强生成", "知识库", "向量数据库"],
+    "content": "RAG 是 Retrieval-Augmented Generation 的缩写，即检索增强生成。它通过先检索外部知识，再让大模型基于检索结果生成答案，从而提高内容的事实可靠性和可追溯性。"
+  },
+  {
+    "id": "kb_008",
+    "title": "多智能体 AI 助手评测指标",
+    "keywords": ["评测", "指标", "任务完成率", "结构完整性", "准确性"],
+    "content": "多智能体 AI 助手可以从任务完成率、结构完整性、信息准确性、逻辑一致性、输出可读性、稳定性、响应时间和模型调用成本等方面进行评测。"
+  },
+  {
+    "id": "kb_009",
+    "title": "系统边界",
+    "keywords": ["系统边界", "MVP", "原型系统", "范围控制"],
+    "content": "短期项目应明确系统边界。第一版可以限定为文本型学术研究辅助任务，不涉及大模型训练、复杂多模态输入、长期记忆系统、企业级权限管理和商业级部署。"
+  },
+  {
+    "id": "kb_010",
+    "title": "中心调度式多智能体架构",
+    "keywords": ["中心调度", "Supervisor", "Orchestrator", "工作流"],
+    "content": "中心调度式多智能体架构由一个 Orchestrator 或 Supervisor 控制任务流程，按照固定顺序调用 Planner、Retriever、Writer、Critic 等 Agent。该架构适合短期项目，因为流程清晰、易于调试、便于展示和评测。"
+  }
+]

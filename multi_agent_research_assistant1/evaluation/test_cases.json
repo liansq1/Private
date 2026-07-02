@@ -1,0 +1,32 @@
+[
+  {
+    "id": "case_001",
+    "task_type": "系统架构设计",
+    "user_query": "帮我生成“基于多智能体架构的通用型 AI 助手技术研究”的系统总体架构设计。",
+    "expected_focus": ["系统分层", "Agent 角色", "数据流", "工作流", "系统边界"]
+  },
+  {
+    "id": "case_002",
+    "task_type": "研究计划生成",
+    "user_query": "我想短期内完成“面向学术研究任务的多智能体 AI 助手设计与实现”这个项目，请帮我制定研究计划。",
+    "expected_focus": ["阶段安排", "技术路线", "可交付成果", "风险控制", "时间规划"]
+  },
+  {
+    "id": "case_003",
+    "task_type": "文献综述初稿",
+    "user_query": "帮我整理多智能体 AI 助手的研究现状，并生成一份文献综述初稿。",
+    "expected_focus": ["研究背景", "关键技术", "典型架构", "当前问题", "发展趋势"]
+  },
+  {
+    "id": "case_004",
+    "task_type": "实验评测方案",
+    "user_query": "请为我的多智能体 AI 助手项目设计实验评测方案，需要比较单 Agent 和多 Agent 的效果。",
+    "expected_focus": ["Baseline", "评价指标", "测试任务", "对比实验", "结果分析"]
+  },
+  {
+    "id": "case_005",
+    "task_type": "技术路线生成",
+    "user_query": "帮我生成这个项目的技术路线，包括前端、后端、模型调用、多 Agent 工作流、知识库和日志模块。",
+    "expected_focus": ["Streamlit", "DeepSeek API", "Orchestrator", "知识库", "日志保存"]
+  }
+]
